@@ -1,6 +1,5 @@
 package com.jpa.springdatajpalearning.demo1.entity;
 
-import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 
