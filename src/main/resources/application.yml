@@ -1,0 +1,20 @@
+
+spring:
+  #database
+  datasource:
+    url: ${DATABASE_URL}
+    username: ${DATABASE_USERNAME}
+    password: ${DATABASE_PASSWORD}
+
+  #JPA
+  jpa:
+    show-sql: true
+  #flyway
+  flyway:
+    baseline-on-migrate: true
+    locations: classpath:/db/migration
+  #log
+logging:
+  level:
+    org.hibernate.type.descriptor.sql.BasicBinder: trace
+
