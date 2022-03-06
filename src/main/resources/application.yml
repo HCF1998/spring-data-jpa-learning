@@ -1,10 +1,14 @@
 
+
 spring:
   #database
   datasource:
     url: ${DATABASE_URL}
     username: ${DATABASE_USERNAME}
     password: ${DATABASE_PASSWORD}
+    druid:
+      test-on-borrow: true
+      test-while-idle: true
 
   #JPA
   jpa:
@@ -17,4 +21,5 @@ spring:
 logging:
   level:
     org.hibernate.type.descriptor.sql.BasicBinder: trace
-
+server:
+  port: 8099
